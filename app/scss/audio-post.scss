@@ -1,0 +1,72 @@
+//audio post
+
+.post-audio{
+    border: 1px solid #f7f7f7;
+    text-align: center;
+    & > .post__content{
+        border: none;
+    }
+    & .post__footer{
+        border-top: 1px solid #f7f7f7;
+    }
+}
+
+.post__audio{
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.audio__name,
+.audio__duration{
+    color: #f9f9fb;
+    font-family: 'montserrat-bold';
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: 1em;
+    background-color: #464646;
+    border-radius: 1em;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.audio__name{
+    left: 18%;
+    width: 20%;
+    max-height: 100%;
+    overflow: hidden;
+    line-height: 1.2em;
+}
+.audio__duration{
+    right: 30%;
+}
+
+#sound{
+    display: none;
+}
+
+.post__player{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #464646;
+    color: #fff;
+    position: relative;
+    font-size: 50px;
+    & > .bi-play-fill{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    & > .bi-pause-fill{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.hidden{
+    display: none;
+}

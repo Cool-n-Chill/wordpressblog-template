@@ -1,0 +1,64 @@
+.content-404{
+    min-height: 450px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-404__image{
+    margin-bottom: 60px;
+}
+
+.page-404__search{
+    width: 100%;
+    margin-bottom: 40px;
+    &-form{
+        display: flex;
+        & input{
+            width: 100%;
+            font-family: 'hind-regular';
+            font-size: .9rem;
+            color: #464646;
+            line-height: 2em;
+            padding-right: 2em;
+            padding-left: 2em;
+        }
+        & button{
+            font-family: 'montserrat-bold';
+            font-size: .9rem;
+            color: #fff;
+            text-transform: uppercase;
+            background-color: #363636;
+            padding: 1.4em 1em;
+        }
+    }
+}
+@media (min-width: 576px) {
+    .page-404__search-form button{
+            padding: 1.4em 4.3em;
+    }
+}
+
+.page-404__text {
+    text-align: center;
+}
+.page-404__title {
+    font-family: 'montserrat-bold';
+    font-size: 2rem;
+    color: #363636;
+    margin-bottom: 10px;
+}
+.page-404__description {
+    font-family: 'montserrat-bold';
+    font-size: .9rem;
+    color: #999;
+    margin-bottom: 25px;
+}
+.page-404__home-link {
+    font-family: 'montserrat-regular';
+    font-size: 1rem;
+    color: #363636;
+    text-transform: uppercase;
+}

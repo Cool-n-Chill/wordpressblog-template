@@ -1,0 +1,97 @@
+//footer
+
+.footer{
+    background-color: #212429;
+    &> .container > .row{
+        padding: 60px 0;
+    }
+    & > .row{
+        width: 100%;
+    }
+}
+
+.footer__column{
+    color:#f9f9fb
+}
+
+.footer__title{
+    font-family: 'montserrat-bold';
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+.footer__text{
+    font-family: 'hind-light';
+    font-size: 1rem;
+    margin-bottom: 15px;
+    line-height: 1.5rem;
+}
+
+.twit{
+    display: flex;
+    margin-bottom: 40px;
+    &:last-child{
+        margin-bottom: 0;
+    }
+}
+
+.twit__icon{
+    margin-right: 10px;
+    font-size: 0.8rem;
+}
+
+.twit__author{
+    display: block;
+    font-family: 'hind-light';
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+}
+
+.twit__text{
+    font-family: 'hind-light';
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.instagram__block > .row{
+    margin: 0;
+    & .col-4{
+    padding: 0;
+    } 
+}
+
+.comment{
+    padding: 20px 0;
+    border-bottom: 1px solid #65676a;
+    &:first-child{
+        padding-top: 0;
+    }
+    &:last-child{
+        padding-bottom: 0;
+        border: none;
+    }
+}
+
+.comment__author{
+    display: block;
+    font-family: 'hind-light';
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.comment__text{
+    font-family: 'hind-light';
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.footer__copyright{
+    display: block;
+    padding: 10px;
+    background-color: #17191c;
+    text-align: center;
+    font-family: 'hind-light';
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #929293;
+}

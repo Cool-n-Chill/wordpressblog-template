@@ -1,0 +1,16 @@
+@import 'fonts.scss';
+@import './node_modules/scss-reset/src/scss/_reset.scss';
+@import 'header.scss';
+@import 'form.scss';
+@import 'slider.scss';
+@import 'posts.scss';
+@import 'audio-post.scss';
+@import 'contacts.scss';
+@import 'sidebar.scss';
+@import 'footer.scss';
+@import '404.scss';
+
+
+body{
+    background-color: #f9f9fb;
+}

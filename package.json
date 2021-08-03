@@ -1,0 +1,30 @@
+{
+  "name": "gulp_start",
+  "version": "1.0.0",
+  "description": "test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rob",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.14",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-sass": "^5.0.0",
+    "gulp-uglify-es": "^2.0.0",
+    "jquery": "^3.6.0",
+    "sass": "^1.36.0"
+  },
+  "dependencies": {
+    "@fancyapps/ui": "^4.0.0-alpha.4",
+    "bootstrap": "^5.0.2",
+    "bootstrap-icons": "^1.5.0",
+    "scss-reset": "^1.2.0",
+    "slick-slider": "^1.8.2"
+  }
+}

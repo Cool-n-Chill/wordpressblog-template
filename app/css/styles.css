@@ -820,7 +820,6 @@ template {
   align-items: center;
 }
 .form__block form .form__title {
-  width: 14.9659863946%;
   font-family: "montserrat-bold";
   font-size: 1.2rem;
   text-transform: uppercase;
@@ -828,16 +827,15 @@ template {
 }
 .form__block form input {
   height: 100%;
-  width: 30.612244898%;
   margin-left: 2.1768707483%;
   font-family: "hind-light";
   font-size: 1rem;
   text-transform: uppercase;
+  line-height: 2rem;
   padding: 0 10px;
   border: none;
 }
 .form__block form button {
-  width: 19.0476190476%;
   height: 100%;
   margin-left: 2.1768707483%;
   background-color: #212121;
@@ -848,6 +846,58 @@ template {
   letter-spacing: 2px;
 }
 
+@media (min-width: 1401px) {
+  .form__block form .form__title {
+    width: 17%;
+  }
+  .form__block form input {
+    width: 30%;
+  }
+  .form__block form button {
+    width: 30%;
+  }
+}
+@media (min-width: 1201px) and (max-width: 1400px) {
+  .form__block form .form__title {
+    width: 20%;
+  }
+  .form__block form input {
+    width: 25%;
+  }
+  .form__block form button {
+    width: 25%;
+  }
+}
+@media (min-width: 993px) and (max-width: 1200px) {
+  .form__block form .form__title {
+    width: 20%;
+  }
+  .form__block form input {
+    width: 25%;
+  }
+  .form__block form button {
+    width: 25%;
+  }
+}
+@media (max-width: 992px) {
+  .form__block form {
+    flex-direction: column;
+    height: auto;
+  }
+  .form__block form .form__title {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .form__block form input {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
+  }
+  .form__block form button {
+    width: 100%;
+    height: 50px;
+  }
+}
 .content__slider {
   background: #212429;
   background: linear-gradient(180deg, #212429 50%, #f9f9fb 50%);
@@ -879,6 +929,15 @@ template {
   letter-spacing: 5px;
 }
 
+@media (max-width: 576px) {
+  .slide__title {
+    font-size: 1.2rem;
+  }
+
+  .slide__subtitle {
+    font-size: 1rem;
+  }
+}
 .slider__text {
   font-family: "hind-semibold";
   font-size: 1rem;
@@ -888,18 +947,56 @@ template {
   letter-spacing: 5px;
   transform: rotate(-90deg);
   top: 45%;
-  right: -5%;
 }
 
+@media (min-width: 1401px) {
+  .slider__text {
+    right: -4.7%;
+  }
+}
+@media (min-width: 1201px) and (max-width: 1400px) {
+  .slider__text {
+    right: -6%;
+  }
+}
+@media (min-width: 993px) and (max-width: 1200px) {
+  .slider__text {
+    right: -7.5%;
+  }
+}
+@media (min-width: 769px) and (max-width: 992px) {
+  .slider__text {
+    right: -11%;
+  }
+}
+@media (min-width: 577px) and (max-width: 768px) {
+  .slider__text {
+    right: -16%;
+  }
+}
+@media (max-width: 576px) {
+  .slider__text {
+    right: -90px;
+  }
+}
 .content__slider ul.slick-dots {
   bottom: 50%;
   transform: translateY(50%);
-  right: 7%;
   display: flex;
   flex-direction: column;
   width: auto;
 }
 
+@media (max-width: 992px) {
+  .content__slider ul.slick-dots {
+    right: 8%;
+  }
+}
+@media (min-width: 993px) {
+  .content__slider ul.slick-dots {
+    right: 6%;
+  }
+}
 .slick-dots li {
   margin: 5px 0;
 }
@@ -979,6 +1076,11 @@ template {
 @media (min-width: 1400px) {
   .post:last-child {
     margin-bottom: 0;
+  }
+}
+@media (max-width: 992px) {
+  .post-empty {
+    display: none;
   }
 }
 .post-image img {
@@ -1723,6 +1825,14 @@ template {
   color: #f9f9fb;
 }
 
+@media (max-width: 767px) {
+  .footer__column {
+    margin-bottom: 50px;
+  }
+  .footer__column:last-child {
+    margin-bottom: 0;
+  }
+}
 .footer__title {
   font-family: "montserrat-bold";
   font-size: 1rem;
@@ -1730,6 +1840,11 @@ template {
   margin-bottom: 40px;
 }
 
+@media (max-width: 767px) {
+  .footer__title {
+    margin-bottom: 20px;
+  }
+}
 .footer__text {
   font-family: "hind-light";
   font-size: 1rem;
@@ -1745,6 +1860,14 @@ template {
   margin-bottom: 0;
 }
 
+@media (max-width: 767px) {
+  .twit {
+    margin-bottom: 20px;
+  }
+  .twit:last-child {
+    margin-bottom: 0;
+  }
+}
 .twit__icon {
   margin-right: 10px;
   font-size: 0.8rem;
@@ -1806,6 +1929,11 @@ template {
   color: #929293;
 }
 
+@media (max-width: 767px) {
+  .footer__copyright {
+    font-size: 0.8rem;
+  }
+}
 .content-404 {
   min-height: 450px;
   height: 100vh;

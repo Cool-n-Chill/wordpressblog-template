@@ -13,6 +13,14 @@
 .footer__column{
     color:#f9f9fb
 }
+@media (max-width: 767px) {
+    .footer__column{
+        margin-bottom: 50px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+}
 
 .footer__title{
     font-family: 'montserrat-bold';
@@ -20,6 +28,12 @@
     text-transform: uppercase;
     margin-bottom: 40px;
 }
+@media (max-width: 767px) {
+    .footer__title{
+        margin-bottom: 20px;
+    }
+}
+
 .footer__text{
     font-family: 'hind-light';
     font-size: 1rem;
@@ -32,6 +46,14 @@
     margin-bottom: 40px;
     &:last-child{
         margin-bottom: 0;
+    }
+}
+@media (max-width: 767px) {
+    .twit{
+        margin-bottom: 20px;
+        &:last-child{
+            margin-bottom: 0;
+        }
     }
 }
 
@@ -94,4 +116,9 @@
     font-size: 1rem;
     text-transform: uppercase;
     color: #929293;
+}
+@media (max-width: 767px) {
+    .footer__copyright{
+        font-size: 0.8rem;
+    }
 }

@@ -29,10 +29,14 @@
         box-shadow: 0 5px 15px rgba(0,0,0,0.3);
     }
 }
-
 @media (min-width: 1400px) {
     .post:last-child{
             margin-bottom: 0;
+    }
+}
+@media (max-width: 992px) {
+    .post-empty{
+        display: none;
     }
 }
 

@@ -1,5 +1,26 @@
 $(document).ready(function(){
 
+    //Adaptive menu
+
+    //1. Open menu
+    $('.header__burger').on('click', function() {
+        $('.header__menu').toggleClass('active-menu');
+        $('body').toggleClass('lock');
+    });
+    //2. Close menu
+    $('.menu__close').on('click', function() {
+        $('.header__menu').toggleClass('active-menu');
+        $('body').toggleClass('lock');
+    });
+
+    $('.menu__link').on('click', function () {
+        if($('.header__menu-body').hasClass('active-menu')) {
+        $('.header__menu-icon').toggleClass('close');
+        $('.header__menu-body').toggleClass('active-menu');
+        $('body').toggleClass('lock');
+        }
+    })
+
     //Slider
 
     $('.slider').slick({

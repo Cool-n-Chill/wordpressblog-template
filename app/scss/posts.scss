@@ -6,6 +6,12 @@
     padding-bottom: 60px;
     background-color: #f9f9fb;
 }
+@media (max-width: 992px) {
+    .content-and-sidebar > .container > .row{
+        position: relative;
+    }
+}
+
 
 .posts-section {
     padding-top: 0px;
@@ -175,6 +181,21 @@
     width: 20%;
     justify-content: space-between;
 }
+@media (min-width: 1400px) {
+    .post__comment-and-like{
+        width: 20%;
+    }
+}
+@media (max-width: 1401px) and (min-width: 577px) {
+    .post__comment-and-like{
+        width: 40%;
+    }
+}
+@media (max-width: 576px) {
+    .post__comment-and-like{
+        width: 80%;
+    }
+}
 
 .post__comment,
 .post__like{
@@ -201,6 +222,11 @@
     .post__comment,
     .post__average{
             margin-bottom: 10px;
+    }
+}
+@media (max-width: 576px) {
+    .post__average{
+        font-size: 0.8rem;
     }
 }
 
@@ -318,6 +344,18 @@
     }
 
 }
+@media (max-width: 576px) {
+    .posts__buttons{
+        flex-direction: column-reverse;
+        margin-bottom: 40px;
+    }
+    .posts__prev-button,
+    .posts__next-button {
+        width: 100%;
+        height: 4em;
+        margin-bottom: 10px;
+    }
+}
 
 .posts__author {
     display: flex;
@@ -325,10 +363,14 @@
     margin-bottom: 20px;
 }
 .author-photo {
-    max-width: 25%;
     & img{
         height: 100%;
         width: auto;
+    }
+}
+@media (max-width: 768px) {
+    .author-photo{
+        display: none;
     }
 }
 .author-info {
@@ -384,6 +426,29 @@
         color: #999;
         text-transform: uppercase;
         text-align: center;
+    }
+}
+
+@media (max-width: 1200px) {
+    .posts__social-card{
+        display: flex;
+        flex-direction: column;
+        & button{
+            margin-right: 0;
+            border-right: none;
+            border-bottom: 1px solid #f1f1f3;
+        }
+        & span{
+            margin: 10px;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .posts__social-card{
+        margin-bottom: 20px;
+        & span{
+            font-size: 0.8rem;
+        }
     }
 }
 
@@ -449,6 +514,11 @@
     text-transform: uppercase;
     margin-bottom: 30px;
 }
+@media (max-width: 576px) {
+    .recomended__title{
+        font-size: 1rem;
+    }
+}
 
 .rec-slide__title{
     font-family: 'montserrat-bold';
@@ -456,4 +526,9 @@
     text-transform: uppercase;
     padding: 0.8em 0;
     text-align: center;
+}
+@media (max-width: 576px) {
+    .rec-slide__title{
+        font-size: 0.8rem;
+    }
 }

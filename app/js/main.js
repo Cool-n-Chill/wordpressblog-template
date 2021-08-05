@@ -12,14 +12,26 @@ $(document).ready(function(){
         $('.header__menu').toggleClass('active-menu');
         $('body').toggleClass('lock');
     });
-
-    $('.menu__link').on('click', function () {
-        if($('.header__menu-body').hasClass('active-menu')) {
-        $('.header__menu-icon').toggleClass('close');
-        $('.header__menu-body').toggleClass('active-menu');
+    //3. Close menu with linkclick
+    $('.menu__social-and-search > .social__link').on('click', function () {
+        if($('.header__menu').hasClass('active-menu')) {
+        $('.header__menu').toggleClass('active-menu');
         $('body').toggleClass('lock');
         }
     })
+
+    //Adaptive sidebar
+
+    //1. Open sidebar
+    $('.sidebar-show').on('click', function() {
+        $('.sidebar').toggleClass('active-sidebar');
+        $('body').toggleClass('lock');
+    });
+    //2. Close sidebar
+    $('.sidebar__close').on('click', function() {
+        $('.sidebar').toggleClass('active-sidebar');
+        $('body').toggleClass('lock');
+    });
 
     //Slider
 
@@ -48,6 +60,15 @@ $(document).ready(function(){
     $('.recomended__slider').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
+        responsive: [
+            {
+              breakpoint: 576,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+              }
+            },
+        ],
     });
 
     //Sound custom

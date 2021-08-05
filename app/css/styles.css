@@ -697,7 +697,7 @@ template {
   width: 100%;
   height: 100%;
   background-color: #212121;
-  z-index: 11;
+  z-index: 51;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -778,7 +778,7 @@ template {
   align-items: center;
   text-transform: uppercase;
   font-size: 1.4em;
-  z-index: 12;
+  z-index: 52;
 }
 .header__logo > .logo-text {
   margin: 0 10px;
@@ -887,15 +887,18 @@ template {
   .form__block form .form__title {
     width: 100%;
     margin-bottom: 20px;
+    margin-left: 0;
   }
   .form__block form input {
     width: 100%;
     height: 50px;
     margin-bottom: 20px;
+    margin-left: 0;
   }
   .form__block form button {
     width: 100%;
     height: 50px;
+    margin-left: 0;
   }
 }
 .content__slider {
@@ -1050,6 +1053,11 @@ template {
   background-color: #f9f9fb;
 }
 
+@media (max-width: 992px) {
+  .content-and-sidebar > .container > .row {
+    position: relative;
+  }
+}
 .posts-section {
   padding-top: 0px;
   padding-bottom: 0px;
@@ -1217,6 +1225,21 @@ template {
   justify-content: space-between;
 }
 
+@media (min-width: 1400px) {
+  .post__comment-and-like {
+    width: 20%;
+  }
+}
+@media (max-width: 1401px) and (min-width: 577px) {
+  .post__comment-and-like {
+    width: 40%;
+  }
+}
+@media (max-width: 576px) {
+  .post__comment-and-like {
+    width: 80%;
+  }
+}
 .post__comment,
 .post__like {
   font-family: "hind-regular";
@@ -1243,6 +1266,11 @@ template {
   .post__comment,
 .post__average {
     margin-bottom: 10px;
+  }
+}
+@media (max-width: 576px) {
+  .post__average {
+    font-size: 0.8rem;
   }
 }
 .filled {
@@ -1360,20 +1388,35 @@ template {
   background-color: #000;
 }
 
+@media (max-width: 576px) {
+  .posts__buttons {
+    flex-direction: column-reverse;
+    margin-bottom: 40px;
+  }
+
+  .posts__prev-button,
+.posts__next-button {
+    width: 100%;
+    height: 4em;
+    margin-bottom: 10px;
+  }
+}
 .posts__author {
   display: flex;
   align-items: stretch;
   margin-bottom: 20px;
 }
 
-.author-photo {
-  max-width: 25%;
-}
 .author-photo img {
   height: 100%;
   width: auto;
 }
 
+@media (max-width: 768px) {
+  .author-photo {
+    display: none;
+  }
+}
 .author-info {
   padding: 40px 30px;
   background-color: #fff;
@@ -1434,6 +1477,28 @@ template {
   text-align: center;
 }
 
+@media (max-width: 1200px) {
+  .posts__social-card {
+    display: flex;
+    flex-direction: column;
+  }
+  .posts__social-card button {
+    margin-right: 0;
+    border-right: none;
+    border-bottom: 1px solid #f1f1f3;
+  }
+  .posts__social-card span {
+    margin: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .posts__social-card {
+    margin-bottom: 20px;
+  }
+  .posts__social-card span {
+    font-size: 0.8rem;
+  }
+}
 .posts__recomended {
   background-color: #fff;
   padding: 40px 30px;
@@ -1493,6 +1558,11 @@ template {
   margin-bottom: 30px;
 }
 
+@media (max-width: 576px) {
+  .recomended__title {
+    font-size: 1rem;
+  }
+}
 .rec-slide__title {
   font-family: "montserrat-bold";
   font-size: 1rem;
@@ -1501,6 +1571,11 @@ template {
   text-align: center;
 }
 
+@media (max-width: 576px) {
+  .rec-slide__title {
+    font-size: 0.8rem;
+  }
+}
 .post-audio {
   border: 1px solid #f7f7f7;
   text-align: center;
@@ -1517,8 +1592,17 @@ template {
   margin-bottom: 30px;
 }
 
+@media (max-width: 768px) {
+  .post__audio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .audio__name,
 .audio__duration {
+  display: block;
   color: #f9f9fb;
   font-family: "montserrat-bold";
   font-size: 1rem;
@@ -1526,11 +1610,16 @@ template {
   padding: 1em;
   background-color: #464646;
   border-radius: 1em;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
 }
 
+@media (min-width: 768px) {
+  .audio__name,
+.audio__duration {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
 .audio__name {
   left: 18%;
   width: 20%;
@@ -1539,10 +1628,22 @@ template {
   line-height: 1.2em;
 }
 
+@media (max-width: 768px) {
+  .audio__name {
+    width: 80%;
+    margin-bottom: 10px;
+  }
+}
 .audio__duration {
   right: 30%;
 }
 
+@media (max-width: 768px) {
+  .audio__duration {
+    width: 30%;
+    margin-top: 10px;
+  }
+}
 #sound {
   display: none;
 }
@@ -1578,6 +1679,11 @@ template {
   margin-bottom: 30px;
 }
 
+@media (max-width: 1200px) {
+  .contacts__map {
+    flex-direction: column;
+  }
+}
 .map {
   width: 37.9824561404%;
   height: auto;
@@ -1586,6 +1692,12 @@ template {
   position: relative;
 }
 
+@media (max-width: 1200px) {
+  .map {
+    width: 100%;
+    padding-bottom: 43.8596491228%;
+  }
+}
 .map iframe {
   left: 0;
   top: 0;
@@ -1665,6 +1777,16 @@ template {
   width: 49%;
 }
 
+@media (max-width: 576px) {
+  .row-two-inputs {
+    flex-direction: column;
+  }
+
+  .contacts__name,
+.contacts__email {
+    width: 100%;
+  }
+}
 .contacts__site,
 .contacts__message {
   width: 100%;
@@ -1682,6 +1804,53 @@ template {
   margin-bottom: 0;
 }
 
+@media (max-width: 992px) {
+  .sidebar {
+    position: fixed;
+    width: 80%;
+    height: 100%;
+    right: -100%;
+    top: 0;
+    z-index: 53;
+    overflow: auto;
+    transition: all 0.5s ease;
+  }
+
+  .active-sidebar {
+    right: 0;
+  }
+}
+@media (min-width: 993px) {
+  .sidebar-show {
+    display: none;
+  }
+}
+@media (max-width: 992px) {
+  .sidebar-show {
+    width: 50%;
+    font-family: "montserrat-bold";
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: 1.2em;
+    border-radius: 1em;
+    background-color: #464646;
+    color: #fff;
+    position: sticky;
+    top: -10px;
+    z-index: 50;
+    margin-bottom: 30px;
+  }
+}
+@media (min-width: 993px) {
+  .sidebar__close {
+    display: none;
+  }
+}
+@media (max-width: 992px) {
+  .sidebar__close i {
+    font-size: 1.5rem;
+  }
+}
 .search__form {
   width: 100%;
   height: 50px;
@@ -1696,6 +1865,7 @@ template {
   font-family: "hind-light";
   font-size: 1rem;
   text-transform: uppercase;
+  line-height: 2rem;
 }
 
 .search__button {
@@ -1852,6 +2022,11 @@ template {
   line-height: 1.5rem;
 }
 
+.footer__image {
+  width: 100%;
+  height: auto;
+}
+
 .twit {
   display: flex;
   margin-bottom: 40px;
@@ -1935,6 +2110,7 @@ template {
   }
 }
 .content-404 {
+  background-color: #f9f9fb;
   min-height: 450px;
   height: 100vh;
   display: flex;
@@ -1944,6 +2120,7 @@ template {
 }
 
 .page-404__image {
+  padding-top: 60px;
   margin-bottom: 60px;
 }
 
@@ -1979,6 +2156,7 @@ template {
 }
 .page-404__text {
   text-align: center;
+  padding-bottom: 60px;
 }
 
 .page-404__title {
@@ -2007,6 +2185,9 @@ body {
 }
 body.lock {
   overflow: hidden;
+}
+body.light-body {
+  background-color: #f9f9fb;
 }
 
 a {

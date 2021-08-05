@@ -2,12 +2,24 @@
     display: flex;
     margin-bottom: 30px;
 }
+@media (max-width: 1200px) {
+    .contacts__map{
+        flex-direction: column;
+    }
+}
+
 .map{
     width: 433/1140*100%;
     height: auto;
     overflow:hidden;
     padding-bottom:300/1140*100%;
     position:relative;
+}
+@media (max-width: 1200px) {
+    .map{
+        width: 100%;
+        padding-bottom:500/1140*100%;
+    }
 }
 .map iframe{
     left:0;
@@ -81,6 +93,15 @@
 .contacts__name,
 .contacts__email {
     width: 49%;
+}
+@media (max-width: 576px) {
+    .row-two-inputs{
+        flex-direction: column;
+    }
+    .contacts__name,
+    .contacts__email {
+        width: 100%;
+}
 }
 
 .contacts__site,
